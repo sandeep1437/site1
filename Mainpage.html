@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMore</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <img src="sandeep.png">
+            <div class="navlist" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#AboutUs">ABOUT US</a></li>
+                    <li><a href="#">TUTORIALS LIST</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text_box">
+            <h1>Learn More to Achive Your Goals</h1>
+            <p>Knowledge of languages used by programmers can provide some very useful benefits, <br> like refined analytic skills and clear, concise communication.
+            </p>
+            <a href="" class="hero-btn">SUBSCRIBE LEARNMORE</a>
+        </div>
+    </section>
+
+    <!-------------------------------------------About us------------------------------------------------->
+
+
+    <section class="aboutUs" id="AboutUs">
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h1>About US</h1><br>
+                    <br>
+                    <p>Here we provided the best and well understandable Tutorials for you. <br> We hope that this Tutorials will help you to learn about Programming Languages.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--- --------javascript for toggle menu-------- -->
+    <script>
+        var navlinks = document.getElementById("nav-links");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
+
+</html>
