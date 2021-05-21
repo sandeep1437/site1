@@ -11,6 +11,9 @@
     background-size: cover;
     /* position: relative;*/
 }
+body{
+    overflow-x:hidden;
+}
 
 nav {
     display: flex;
@@ -220,6 +223,4 @@ nav .fa {
     color: white;
     font-weight: 300;
 }
-body{
-    overflow-x:hidden;
-}
+
