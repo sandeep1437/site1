@@ -111,7 +111,7 @@ nav .fa {
         display: block;
     }
     .navlist {
-        position: absolute;
+        position: fixed;
         background: tomato;
         height: 100vh;
         width: 200px;
