@@ -16,9 +16,12 @@
     <section class="header">
         <nav>
             <img src="sandeep.png">
+
             <div class="navlist" id="nav-links">
+
                 <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                 <ul>
+                    <h1>Hi <span id="result"></span></h1>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#AboutUs">ABOUT US</a></li>
                     <li><a href="#">TUTORIALS LIST</a></li>
@@ -79,6 +82,9 @@
             glare: true,
             "max-glare": 1,
         });
+    </script>
+    <script>
+        document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
     </script>
 </body>
 
