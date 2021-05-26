@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <section class="mainbody">
+        <div class="inputbox">
+            <img src="Cool-Avatar.png">
+            <form id="formid" action="site/Mainpage.html">
+                <h1>Login Form</h1>
+                <p>User Name</p>
+                <input type="text" id="nameID" name="Name" placeholder="UserName">
+                <br>
+                <input id="submit" type="submit" value="Login" onclick="passValues();">
+            </form>
+
+        </div>
+    </section>
+    <script>
+        function passValues() {
+            var name = document.getElementById('nameID').value;
+            localStorage.setItem("textvalue", name);
+            // now redirect the page.
+        }
+    </script>
+
+</body>
+
+</html>
